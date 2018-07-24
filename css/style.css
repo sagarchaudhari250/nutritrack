@@ -1,0 +1,185 @@
+/* YOUR CUSTOM STYLES */
+body {
+	/*color: #fff;*/
+}
+
+.row {
+	position: relative;
+}
+
+#food-suggetions {
+	position: absolute;
+	top: 37px;
+	z-index: 99;
+	left: 0;
+}
+
+#food-suggetions li,
+.searched-item-list > li,
+#next,
+#prev,
+button {
+	cursor: pointer !important;
+}
+
+#food-suggetions li:hover,
+.searched-item-list > li:hover,
+#final-list li:hover {
+	background: #ece8e8;
+}
+.main-container {
+	min-height: 100vh;
+	background-image: url("../img/70118736-vegetables-wallpapers.jpg");
+	height: 100%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.row {
+	opacity: 1;
+}
+
+#food-suggetions, .searched-items, .consumed-food {
+	padding: 0;
+}
+
+#food-suggetions li {
+	padding: .20rem 1.25rem;
+}
+
+#item-list li.list-group-item,
+.final-list li.item-list-header {
+	border-radius: 0;
+}
+
+#item-list li, .list-group li {
+	overflow: auto;
+	justify-content: space-between;
+}
+
+.item-list-header span {
+	font-weight: 700;
+	font-size: 19px;
+}
+
+.search-form {
+	justify-content: center;
+}
+
+.form-container, .searched-item-list, .searched-items, .consumed-food, .grand-total {
+	margin: 0 auto;
+}
+
+.item-list-data span {
+	width: 50%;
+}
+
+.final-list span {
+	width: 25%;
+}
+
+.item-list-data span:nth-of-type(2),
+.final-list span:nth-of-type(2),
+.final-list span:nth-of-type(3){
+	text-align: center;
+}
+
+.item-list-data span:last-child,
+.final-list span:last-child {
+	text-align: right;
+}
+
+.item-list-data img {
+	width: 40px;
+}
+
+.searched-items .consumed-food-title, .consumed-food {
+	margin-top: 50px;
+}
+
+.modal-list {
+	flex-direction: row;
+}
+
+.quantity-group {
+	display: flex;
+}
+
+.quantity-group input {
+	width: 40px;
+	margin: 0 7px;
+	text-align: center;
+}
+
+.quantity-group button {
+	display: block;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	color: #000;
+	border-color: #fff;
+	padding: 0;
+}
+
+.quantity-group button:hover {
+	color: #000;
+	background: #fff;
+	border-color: #000;
+}
+
+.grand-total {
+	text-align: center;
+	background: #d45910;
+	color: #fff;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.consumed-food-title {
+	color: #fff;
+	background: #000;
+	margin-bottom: 0;
+	padding: 5px 10px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.nutri-modal .modal-footer {
+	justify-content: center;
+}
+
+.pagination {
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.none {
+	visibility: hidden;
+}
+
+.quantity-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.quantity-title,
+.quantity-buttons button,
+.quantity-buttons input,
+#servings-unit {
+	align-self: center
+}
+
+.single-calorie {
+	display: flex;
+}
+
+.single-calorie span {
+	align-self: center;
+	margin-right: 5px;
+	font-size: 30px;
+}
+
+.message {
+	font-size: 25px;
+}

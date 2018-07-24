@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Nutri Track</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+
+    <div class="container-fluid main-container">
+        <div class="row">
+            <div class="col-sm-12"><h1 class="display-4 text-center"><strong>Nutri-Track</strong></h1></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7 form-container">
+                <div class="row">
+                    <input type="text" class="form-control col-md-9 col-sm-12" id="food-search" placeholder="Search Food">
+                    <button type="submit" class="btn btn-default col-md-3 col-sm-12 btn-primary" id="search">Search</button>
+                    <ul class="col-md-9 list-group" id="food-suggetions">
+                        <!-- suggetions -->
+                    </ul>
+                </div>
+            </div>
+            <div class="searched-items col-sm-7">
+                <div class="searched-item-list">
+
+
+                    <!-- list of food products -->
+                </div>
+                <div class="pagination"></div>
+            </div>
+            <div class="col-sm-12">
+                <div class="modal fade nutri-modal" id="smallShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabelSmall" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title nutri-modal-title" id="modalLabelSmall"></h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="quantity-group">
+                                            <strong class="quantity-title">Quantity:- &nbsp;</strong>
+                                            <div class="quantity-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm" id="incrementor">
+                                                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                                </button>
+                                                <input type="text" value="" id="serving-count" min="0">
+                                                <button type="button" class="btn btn-primary btn-sm" id="decrementor">
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <span id="servings-unit"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 single-calorie">
+                                        <span id="serving-cal"></span><span> Calories</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" id="submit-food" data-dismiss="modal" aria-label="Close">Add to list</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="consumed-food col-sm-7">
+                <h4 class="consumed-food-title">Foods you ate today</h4>
+                <ul class="list-group final-list">
+                    <li class="list-group-item item-list-header">
+                        <span>Food Name</span>
+                        <span>Quantity</span>
+                        <span>Calories</span>
+                        <span>Delete</span>
+                    </li>
+                    <ul class="list-group" id="final-list">
+
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron col-sm-7 grand-total">
+                <h5 class="daily-limit"></h5>
+                <p class="name-msg">Total Calories Consumed</p>
+                <h1><span id="total-calorie">0</span> Calories</h1>
+                <p class="message">Limit exceeded</p>
+            </div>
+        </div>
+    </div>
+    <!-- /Start your project here-->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
